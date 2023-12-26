@@ -11,9 +11,13 @@ sidebar_main : true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Students</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap">
     <style>
-        
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
         .shadow {
             box-shadow: 3px 3px 3px lightgray;
             border-radius: 3%;
@@ -29,15 +33,15 @@ sidebar_main : true
 
         .grid-item {
             border: none;
-            padding: 5px;
+            padding: 10px;
             text-align: center;
         }
 
         .grid-item img {
             max-width: 120px;
             max-height: 160px;
-            min-width: 99px;
-            min-height: 132px;
+            min-width: 105px;
+            min-height: 138px;
             width: 12vw;
             height: 16vw;
         }
@@ -49,17 +53,17 @@ sidebar_main : true
             height: 12vw;
             min-height: 120px;
             text-align: left;
-            font-size: 14px;
+            font-size: 15px;
         }
         .small-font{
-            font-size: 11px;
+            font-size: 12px;
         }
-        @media (max-width: 800px) {
+        @media (max-width: 750px) {
             .grid-item p {
             font-size: 13px;
             }
         }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 750px) {
         .grid-container {
             grid-template-columns: 1fr 100fr; /* 2개의 열로 변경 */
         }}
