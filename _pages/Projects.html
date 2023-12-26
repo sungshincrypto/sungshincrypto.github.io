@@ -5,25 +5,99 @@ permalink : /Projects/
 author_profile : true
 sidebar_main : true
 ---
+<!DOCTYPE html>
+<html lang="en">
 
-<h2>2023</h2>
-<hr/>
-<p>&bullet; Research on Security Analysis Techniques of Lattice-based Algorithms in KpqC Competition
-    <br>&nbsp;&nbsp;(KpqC 공모전 격자기반 알고리즘 기반문제 안전성 분석 기술연구)
-    <br>- Funded by <i>The Affiliated Institute of ETRI</i> (국가보안기술연구소)
-    <br>- 2023.04.01. ~2023.10.31.  </p>
-<p>&bullet; Proposal for Domestic and International Standardization Process of PQC Digital Signature
-    <br>&nbsp;&nbsp;(PQC 전자서명 국내외 표준제안)
-    <br>- Funded by <i>Samsung SDS</i>
-    <br>- 2023.1.1.~2023.12.31.</p>
-<br>
-<h2>2022</h2> 
-<hr/>
-<p>&bullet; Research on Advancement in Zero-Knowledge Proof (영지식 증명 고도화 기법 연구)
-    <br>- Funded by <i>ETRI</i>
-    <br>- 2022.06.01. ~ 2022.12.31.</p>
-<p>&bullet; Security Evaluation of a Newly Proposed Post-Quantum Digital Signature Algorithm 
-    <br>&nbsp;&nbsp;(신규 PQC 전자서명 알고리즘 안전성 검증)
-    <br>- Funded by <i>Samsung SDS</i>
-    <br>- 2022.4.18. ~ 2022.11.30.</p>
-<br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap">
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: repeat(1, 1fr);
+        gap: 20px;
+        grid-column-gap: 20px;
+    }
+
+    .grid-item {
+        border: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .custom-btn {
+        background-color: #466AEB;
+        background-image: linear-gradient(315deg, #6d8af4 0%, #466AEB 74%);
+        border: none;
+        width: 65px;
+        height: 35px;
+        color: #fff;
+        border-radius: 5px;
+        /* padding: 10px 25px; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+            7px 7px 20px 0px rgba(0, 0, 0, .1),
+            4px 4px 5px 0px rgba(0, 0, 0, .1);
+        outline: none;
+    }
+    .title-font{
+        font-weight: 500;
+    }
+</style>
+
+<body>
+    <h2>2023</h2>
+    <hr/>
+    <div class="grid-container">
+        <div><button class="custom-btn" disabled>ETRI</button></div>
+    <div>
+        <span class="title-font">Research on Security Analysis Techniques of Lattice-based Algorithms in KpqC Competition</span>
+            <br>(KpqC 공모전 격자기반 알고리즘 기반문제 안전성 분석 기술연구)
+            <br><i>Funded By. The Affiliated Institute of ETRI</i> (국가보안기술연구소)
+            <br>2023.04.01 ~ 2023.10.31
+    </div>
+    <div><button class="custom-btn" disabled>Samsung SDS</button></div>
+    <div>
+        <span class="title-font">Proposal for Domestic and International Standardization Process of PQC Digital Signature</span>
+            <br>(PQC 전자서명 국내외 표준제안)
+            <br><i>Funded by. Samsung SDS</i>
+            <br>2023.1.1 ~ 2023.12.31
+    </div>
+    </div>
+
+    <h2>2022</h2>
+    <hr/>
+    <div class="grid-container">
+        <div><button class="custom-btn" disabled>ETRI</button></div>
+    <div>
+        <span class="title-font">Research on Advancement in Zero-Knowledge Proof</span>
+            <br>(영지식 증명 고도화 기법 연구)
+            <br><i>Funded By. The Affiliated Institute of ETRI</i> (국가보안기술연구소)
+            <br>2022.06.01 ~ 2022.12.31
+    </div>
+    <div><button class="custom-btn" disabled>Samsung SDS</button></div>
+    <div>
+        <span class="title-font">Security Evaluation of a Newly Proposed Post-Quantum Digital Signature Algorithm</span>
+            <br>(신규 PQC 전자서명 알고리즘 안전성 검증)
+            <br><i>Funded by. Samsung SDS</i>
+            <br>2022.4.18 ~ 2022.11.30
+    </div>
+    </div>
+
+</body>
