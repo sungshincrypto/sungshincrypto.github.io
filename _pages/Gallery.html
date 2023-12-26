@@ -21,13 +21,17 @@ sidebar_main : true
 
         .container1,
         .container2 {
-            width: 40vw;
-            height: 30vw;
+            width: 60vw;
+            height: 45vw;
+            max-width: 480px;
+            max-height: 360px;
         }
 
         .album {
-            width: 40vw;
-            height: 30vw;
+            width: 60vw;
+            height: 45vw;
+            max-width: 480px;
+            max-height: 360px;
             border: 1px solid #fff;
             box-sizing: border-box;
             overflow: hidden;
@@ -40,14 +44,18 @@ sidebar_main : true
         .images {
             position: relative;
             display: flex;
-            width: 40vw;
-            height: 30vw;
+            width: 60vw;
+            height: 45vw;
+            max-width: 480px;
+            max-height: 360px;
             transition: transform 0.3s;
         }
 
         .img {
-            width: 40vw;
-            height: 30vw;
+            width: 60vw;
+            height: 45vw;
+            max-width: 100%;
+            max-height: 100%;
         }
 
         .button,
@@ -160,17 +168,34 @@ sidebar_main : true
         function initializeGallery(containerClass) {
             let curPos = 0;
             let positionValue = 0;
-            const IMAGE_WIDH = 40;
 
             const prevBtn = document.querySelector(`.${containerClass} .prev`);
             const nextBtn = document.querySelector(`.${containerClass} .next`);
             const images = document.querySelector(`.${containerClass} .images`);
 
+            function updateImageWidth() {
+        // Get the current viewport width
+        const viewportWidth = window.innerWidth;
+
+        // Calculate the image width based on the viewport width
+        const imageWidth = Math.min(viewportWidth * 0.6, 480); // 60vw or maximum 480px
+
+        // Update the width of container, album, and images
+        document.querySelector(`.${containerClass}`).style.width = `${imageWidth}px`;
+        document.querySelector(`.${containerClass} .album`).style.width = `${imageWidth}px`;
+        document.querySelector(`.${containerClass} .images`).style.width = `${imageWidth}px`;
+
+        // Return the calculated image width
+        return imageWidth;
+    }
+
+
             function next() {
+                const imageWidth = updateImageWidth();
                 if (curPos < 3 && !nextBtn.disabled) {
                     prevBtn.removeAttribute('disabled')
-                    positionValue -= IMAGE_WIDH;
-                    images.style.transform = `translateX(${positionValue}vw)`;
+                    positionValue -= imageWidth;
+                    images.style.transform = `translateX(${positionValue}px)`;
                     curPos += 1;
                 }
                 if (curPos === 3) {
@@ -179,10 +204,11 @@ sidebar_main : true
             }
 
             function prev() {
+                const imageWidth = updateImageWidth();
                 if (curPos > 0 && !prevBtn.disabled) {
                     nextBtn.removeAttribute('disabled')
-                    positionValue += IMAGE_WIDH;
-                    images.style.transform = `translateX(${positionValue}vw)`;
+                    positionValue += imageWidth;
+                    images.style.transform = `translateX(${positionValue}px)`;
                     curPos -= 1;
                 }
                 if (curPos === 0) {
@@ -198,6 +224,7 @@ sidebar_main : true
             }
 
             init();
+            window.addEventListener('resize', updateImageWidth);
         }
         initializeGallery('container1');
         initializeGallery('container2');
