@@ -12,11 +12,14 @@ sidebar_main : true
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
+        }
+        .title-font {
+            font-weight: 500;
         }
         .shadow {
             box-shadow: 3px 3px 3px lightgray;
@@ -27,14 +30,14 @@ sidebar_main : true
             display: grid;
             grid-template-columns: 1fr 100fr 1fr 100fr;
             grid-template-rows: repeat(3, 1fr);
-            gap: 3px;
-            grid-column-gap: 3px;
+            gap: 50px;
+/*             grid-column-gap: 50px; */
         }
 
         .grid-item {
-            border: none;
-            padding: 10px;
+/*             border: 1px solid #000; */
             text-align: center;
+            border: none;
         }
 
         .grid-item img {
@@ -49,8 +52,8 @@ sidebar_main : true
         .grid-item p {
             max-width: 320px;
             min-width: 260px;
-            width: 30vw;
-            height: 12vw;
+            /* width: 30vw;
+            height: 5vw; */
             min-height: 120px;
             text-align: left;
             font-size: 15px;
@@ -72,12 +75,12 @@ sidebar_main : true
 
 <body>
     <div>
-        <h2>M.S. Course</h2>
+        <h2 class="title-font">M.S. Course</h2>
         <p></p>
     </div>
 
     <div>
-        <h2>Undergraduate Internship</h2>
+        <h2 class="title-font">Undergraduate Internship</h2>
     <div class="grid-container">
         <!-- 2x3 그리드의 각 셀에 내용 추가 -->
         <div class="grid-item">
