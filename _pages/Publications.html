@@ -34,6 +34,34 @@ sidebar_main : true
             padding: 10px;
             text-align: center;
         }
+        .pub-tabs {
+            display: inline-block;
+            margin-left: 20px;
+            font-size: 0.45em;
+            vertical-align: middle;
+            font-weight: 400;
+        }
+        .pub-tab {
+            color: #7652E2;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 0 5px;
+            padding-bottom: 2px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+        .pub-tab:hover {
+            text-decoration: none;
+            border-bottom: 2px solid #b39ddb;
+        }
+        .pub-tab.active {
+            font-weight: 700;
+            border-bottom: 2px solid #7652E2;
+        }
+        .pub-tab-sep {
+            color: #bbb;
+            margin: 0 2px;
+        }
         .custom-btn {
             background: rgb(96, 9, 240);
             background-image: linear-gradient(0deg, #7652E2 0%, #8452E2 100%);
@@ -56,10 +84,14 @@ sidebar_main : true
                 4px 4px 5px 0px rgba(0, 0, 0, .1);
             outline: none;
         }
-        
+
     </style>
 </head>
 <body>
+
+<!-- ======================= International ======================= -->
+<div id="pub-international" class="pub-section">
+
 <h2 class="title-font">2026</h2>
 <hr/>
 <div class="grid-container">
@@ -144,8 +176,8 @@ sidebar_main : true
 Bandwidth from a Decomposable KEM. in IEEE Access, 2023.
     </div>
     </div>
- 
-<h2 class="title-font">2022</h2> 
+
+<h2 class="title-font">2022</h2>
 <hr/>
 <div class="grid-container">
     <div><button class="custom-btn" disabled>CCS</button></div>
@@ -162,7 +194,7 @@ Web Conference 2022 (WWW 2022).
 </div>
 
 
-<h2 class="title-font">2021</h2> 
+<h2 class="title-font">2021</h2>
 <hr/>
 <div class="grid-container">
     <div><button class="custom-btn" disabled>IEEE Access</button></div>
@@ -202,22 +234,22 @@ algorithm for privacy-preserving SVM training. in IEEE Access, 2020.
     </div>
 </div>
 
-<h2 class="title-font">2019</h2> 
+<h2 class="title-font">2019</h2>
 <hr/>
 <div class="grid-container">
     <div><button class="custom-btn" disabled>ICISC</button></div>
-    <div>Jung Hee Cheon, Haejin Cho, Jaewook Jung, <b>Joohee Lee</b>, and Keewoo Lee : Efficient IdentityBased Encryption from LWR. in Annual International Conference on Information Security and
+    <div>Jung Hee Cheon, Haejin Cho, Jaewook Jung, <b>Joohee Lee</b>, and Keewoo Lee : Efficient IdentityBased Encryption from LWR. in Annual International Conference on Information Security and
         Cryptology (ICISC) 2019.</div>
         <div><button class="custom-btn" disabled>IEEE Access</button></div>
-    <div><b>Joohee Lee</b>, Duhyeong Kim, Hyungkyu Lee, Younho Lee, and Jung Hee Cheon : RLizard : 
+    <div><b>Joohee Lee</b>, Duhyeong Kim, Hyungkyu Lee, Younho Lee, and Jung Hee Cheon : RLizard :
         Post-quantum Key Encapsulation Mechanism for IoT devices. in IEEE Access, 2018.</div>
         <div><button class="custom-btn" disabled>SafeAI @AAAI</button></div>
-    <div>Saerom Park, Jaewook Lee, Jung Hee Cheon, <b>Joohee Lee</b>, Jaeyun Kim, and Junyoung Byun : 
+    <div>Saerom Park, Jaewook Lee, Jung Hee Cheon, <b>Joohee Lee</b>, Jaeyun Kim, and Junyoung Byun :
         Security-preserving Support Vector Machine with Fully Homomorphic Encryption. in SafeAI@AAAI
         2019.</div>
 </div>
 
-<h2 class="title-font">2018</h2> 
+<h2 class="title-font">2018</h2>
 <hr/>
 <div class="grid-container">
     <div><button class="custom-btn" disabled>SCN</button></div>
@@ -228,30 +260,141 @@ algorithm for privacy-preserving SVM training. in IEEE Access, 2020.
     </div>
     <div><button class="custom-btn" disabled>SCN</button></div>
     <div>
-        Jung Yeon Hwang, Stanislaw Jarecki, Taekyoung Kwon, <b>Joohee Lee</b>, Ji Sun Shin, and Jiayu Xu : 
+        Jung Yeon Hwang, Stanislaw Jarecki, Taekyoung Kwon, <b>Joohee Lee</b>, Ji Sun Shin, and Jiayu Xu :
         Round-Reduced Modular Construction of Asymmetric Password-Authenticated Key Exchange, in
         Conference on Security and Cryptography for Networks (SCN) 2018.
     </div>
 </div>
 
-<h2 class="title-font">2017</h2> 
+<h2 class="title-font">2017</h2>
 <hr/>
 <div class="grid-container">
     <div><button class="custom-btn" disabled>WAHC @FC</button></div>
     <div>
         Jung Hee Cheon, Jinhyuck Jeong, <b>Joohee Lee</b>, and Keewoo Lee : Privacy-Preserving Computations of Predictive Medical Models with Minimax Approximation and Non-Adjacent Form, in
-        Financial Cryptography (FC) Workshops 2017. 
+        Financial Cryptography (FC) Workshops 2017.
     </div>
 </div>
 
 
-<h2 class="title-font">2016</h2> 
+<h2 class="title-font">2016</h2>
 <hr/>
 <div class="grid-container">
     <div><button class="custom-btn" disabled>SAC</button></div>
     <div>
         Jung Hee Cheon, Hyunsook Hong, <b>Joohee Lee</b>, and Jooyoung Lee : An Efficient Affine Equivalence Algorithm for Multiple S-Boxes and a Structured Affine Layer, in Selected Areas in Cryptography (SAC) 2016.
     </div>
+</div>
 
+</div>
+<!-- ===================== End International ===================== -->
+
+<!-- ======================== Domestic =========================== -->
+<div id="pub-domestic" class="pub-section" style="display: none;">
+
+<h2 class="title-font">2026</h2>
+<hr/>
+<div class="grid-container">
+    <div><button class="custom-btn" disabled>KIICE</button></div>
+    <div>
+        <b>Eunmin Lee</b> and <b>Joohee Lee</b> : Effectiveness Analysis of the Ratio Attack on the G+G Signature and Requirements for Secure Design. in KIICE Spring Conference 2026.
+    </div>
+    <div><button class="custom-btn" disabled>JKIISC</button></div>
+    <div>
+        <b>Eunmin Lee</b>, Seongmin Kim, Daeun Kim, <b>Joohee Lee</b>, <b>Hyun-A Noh</b>, and Heejae Yang : Towards Practical Crypto Agility: A Middleware Framework for Post-Quantum Cryptography Integration. in Journal of The Korea Institute of Information Security and Cryptology, 2026.
+    </div>
+    <div><button class="custom-btn" disabled>JKIISC</button></div>
+    <div>
+        <b>Hyun-A Noh</b> and <b>Joohee Lee</b> : A Privacy-Preserving Federated Learning Framework Using Homomorphic Encryption in Non-IID Environments. in Journal of The Korea Institute of Information Security and Cryptology, 2026.
+    </div>
+</div>
+
+<h2 class="title-font">2025</h2>
+<hr/>
+<div class="grid-container">
+    <div><button class="custom-btn" disabled>ASK</button></div>
+    <div>
+        <b>Hyun-A Noh</b>, YeonSeo Park, Yeon-sup Lim, and <b>Joohee Lee</b> : A Privacy-Preserving Federated Learning Framework on Non-IID Data via Homomorphic Encryption-Based Aggregation. in Annual Conference of KIPS 2025.
+    </div>
+    <div><button class="custom-btn" disabled>JKIISC</button></div>
+    <div>
+        <b>Hyun-A Noh</b>, <b>Joohee Lee</b>, and <b>Eunmin Lee</b> : Privacy-Preserving Biometric Matching Framework for IoT-Cloud Architecture. in Journal of The Korea Institute of Information Security and Cryptology, 2025.
+    </div>
+</div>
+
+<h2 class="title-font">2024</h2>
+<hr/>
+<div class="grid-container">
+    <div><button class="custom-btn" disabled>ASK</button></div>
+    <div>
+        <b>Hyun-A Noh</b> and <b>Joohee Lee</b> : A Proposal for an Encrypted Facial Image Authentication Framework for Drones. in Annual Conference of KIPS 2024.
+    </div>
+</div>
+
+<h2 class="title-font">2023</h2>
+<hr/>
+<div class="grid-container">
+    <div><button class="custom-btn" disabled>JKIISC</button></div>
+    <div>
+        <b>Joohee Lee</b>, <b>Eunmin Lee</b>, and Jiseung Kim : Security Analysis on TiGER KEM in KpqC Round 1 Competition Using Meet-LWE Attack. in Journal of The Korea Institute of Information Security and Cryptology, 2023.
+    </div>
+    <div><button class="custom-btn" disabled>Crypto Contest</button></div>
+    <div>
+        <b>Joohee Lee</b>, <b>Eunmin Lee</b>, and Jiseung Kim : Security Analysis on TiGER KEM in KpqC Round 1 Competition Using Meet-LWE Attack. in Crypto Contest 2023.
+    </div>
+    <div><button class="custom-btn" disabled>JKIICE</button></div>
+    <div>
+        <b>Eunmin Lee</b> and <b>Joohee Lee</b> : Privacy-Preserving Credit Scoring via Support Vector Machine Training with Homomorphic Encryption. in The Journal of the Korean Institute of Information and Communication Engineering, 2023.
+    </div>
+    <div><button class="custom-btn" disabled>KIICE</button></div>
+    <div>
+        <b>Eunmin Lee</b> and <b>Joohee Lee</b> : Encrypted Credit Scoring Using Support Vector Machine. in KIICE Spring Conference 2023.
+    </div>
+</div>
+
+</div>
+<!-- ======================= End Domestic ======================== -->
+
+<script>
+(function () {
+    function showSection(category) {
+        document.getElementById('pub-international').style.display =
+            (category === 'international') ? '' : 'none';
+        document.getElementById('pub-domestic').style.display =
+            (category === 'domestic') ? '' : 'none';
+        document.querySelectorAll('.pub-tab').forEach(function (tab) {
+            tab.classList.toggle('active', tab.dataset.category === category);
+        });
+    }
+
+    function init() {
+        var title = document.getElementById('page-title');
+        if (!title) return;
+
+        var tabs = document.createElement('span');
+        tabs.className = 'pub-tabs';
+        tabs.innerHTML =
+            '<a class="pub-tab" data-category="international" href="#international">International</a>' +
+            '<span class="pub-tab-sep">|</span>' +
+            '<a class="pub-tab" data-category="domestic" href="#domestic">Domestic</a>';
+        title.appendChild(tabs);
+
+        tabs.querySelectorAll('.pub-tab').forEach(function (tab) {
+            tab.addEventListener('click', function (e) {
+                e.preventDefault();
+                showSection(tab.dataset.category);
+            });
+        });
+
+        showSection('international'); // default view
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
 </body>
 </html>
